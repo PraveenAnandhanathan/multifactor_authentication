@@ -1,0 +1,204 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* cursor types */
+html{
+  cursor:url(icon/heart.cur), auto;
+}
+input,textarea{
+  cursor:url(icon/text.cur), auto;
+}
+a,#button,select,i{
+  cursor:url(icon/heart2.cur), auto;
+}
+
+::placeholder{
+  color: rgba(131, 240, 121, 0.363);
+}
+:focus::placeholder {
+  color: transparent;
+}
+*:focus{
+  outline: none;
+}
+body{
+    user-select: none;  
+    /* background-image:url(icon/wedbg.png); */
+    background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,0.3)), url(icon/wedbg.png) center center /cover;
+    height: 100vh;
+    color: white;
+    font-size: 18px;
+    font-family: Arial;
+    overflow: hidden;
+  }
+  #div1{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 80px;
+    background-color:rgba(0, 0, 0, 0.6);
+    opacity: 0.9;
+    width:450px;
+    height: 620px;
+    padding:20px;
+  }
+  #button{
+    background-color: #32a852;
+    border: 1px solid gray;
+    padding: 10px;
+    font-size: 18px;
+    color: #32a852;
+  }
+  input{
+    font-size: 15px;
+  }
+  a:link, a:visited{
+    color: #32a852;
+    text-decoration: none;
+  }
+  a:link#a1, a:visited#a1{
+    color:yellow;
+    text-decoration: none;
+  }
+  select,input[type=text],input[type=number],input[type=password]{
+    border: 0px solid transparent;
+    width:300px;
+    height:30px;
+    font-size: 15px;
+    margin: 10px;
+    padding-left: 10px;
+    background: transparent;
+    color: #32a852;
+  }
+  select{
+    border:2px solid#32a852;
+    width: 360px;
+    height: 50px;
+    margin-top: 20px;
+  }
+  select option{
+    background:#32a852;
+    color: black;
+  }
+  textarea{
+      width: 350px;
+      margin: 10px;
+      font-size: 15px;
+      padding-left: 10px;
+      padding-top: 10px;
+      color: black;
+      background: transparent;
+      border: 2px solid #32a852;
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus{
+      -webkit-animation: autofill 0s forwards;
+       animation: autofill 0s forwards;
+  }
+  
+  @keyframes autofill {
+      100% {
+          background: transparent;
+          color: #1f6632;
+      }
+  }
+  
+  @-webkit-keyframes autofill {
+      100% {
+          background: transparent;
+          color: #1f6632;
+      }
+  }
+  #button{
+    border:2px solid #1f6632;
+    padding:5px 20px;
+    background:linear-gradient(#32a852,#32a852) center/100% 0px no-repeat;
+    transition:0.2s all linear;
+  }
+  #button:hover {
+    background-size:100% 100%;
+    color: black;
+  }
+  #textdes{
+    border-bottom:2px solid #32a852; 
+    width:80%;
+  }
+  label{
+    position: absolute;  
+    right:70px; 
+    font-size: 15px;
+  }
+
+  /* .custom-file-input {
+    color: transparent;
+    padding-left: 12px;
+    padding-bottom: 10px;
+  }
+  .custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .custom-file-input::before {
+    content: 'Select Security Code file';
+    color: black;
+    display: inline-block;
+    background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+  }
+  .custom-file-input:hover::before {
+    border-color: black;
+  }
+  .custom-file-input:active {
+    outline: 0;
+  }
+  .custom-file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
+  }
+  .custom-file-input::after {
+    content: 'File Selected..';
+    color: black;
+    display: inline-block;
+    background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+  } */
+
+  input[type=file]::file-selector-button {
+    border:2px solid #1f6632;
+    color: #32a852;
+    padding:5px 20px;
+    background:linear-gradient(#32a852,#32a852) center/100% 0px no-repeat;
+    transition:0.2s all linear;
+    margin-left: 12px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+  }
+  
+  input[type=file]::file-selector-button:hover {
+    background-size:100% 100%;
+    color: black;
+  }
